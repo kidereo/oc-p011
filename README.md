@@ -1,12 +1,12 @@
 ## Project
-0011 - Développez une application Web avec React et React Router
+011 - Développez une application Web avec React et React Router
 
 ## Path 
 Développeur d'application - JavaScript React
 
 ## About React and React Router
 
-This project was bootstrapped with [Create React Kasa](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
 Routing by [React Router](https://reactrouter.com/en/main).
 
 ## Available Scripts
@@ -48,6 +48,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
-You can learn more in the [Create React Kasa documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
