@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/normalize.css";
+import './css/styles.css';
 
-function App() {
+/**
+ * Main app file for the Kasa site.
+ *
+ * @returns {*}
+ * @constructor
+ */
+function Kasa() {
   return (
-    <div className="App">
+    <div className="body-container">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -22,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default Kasa;
