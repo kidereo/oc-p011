@@ -1,5 +1,9 @@
-.body-container { width: 100%; max-width: 1440px; margin: 0 auto 0 auto; }
+.body-container { width: 100%; max-width: 1440px; margin: 40px auto 40px auto; }
 
 body { font-family: "Montserrat", sans-serif; margin: 0; }
 
 * { box-sizing: border-box; }
+
+.header-navigation { display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+
+.header-navigation-image { height: 68px; }
