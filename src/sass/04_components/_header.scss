@@ -7,7 +7,26 @@
     align-items: center;
 
     &-image {
-      height: 68px;
+      height: 60px;
+    }
+
+    &-menu {
+
+      a {
+        font-weight: 500;
+        font-size: 24px;
+        text-decoration: none;
+        color: $colour-font-primary;
+        margin-left: 60px;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+      &_active {
+        text-decoration: underline!important;
+      }
     }
   }
 }

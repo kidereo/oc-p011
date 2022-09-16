@@ -1,0 +1,24 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-code {
+    font-weight: 700;
+    font-size: 288px;
+    color: $colour-font-primary;
+    margin: 150px auto 40px auto;
+  }
+  &-message {
+    font-weight: 500;
+    font-size: 36px;
+    color: $colour-font-primary;
+    margin-bottom: 180px;
+    margin-top: 0px;
+  }
+  &-backlink {
+    font-weight: 500;
+    font-size: 18px;
+    color: $colour-font-primary;
+  }
+}

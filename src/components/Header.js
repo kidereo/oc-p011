@@ -1,5 +1,6 @@
 import React from "react";
-import LogoColour from "../assets/kasa-logo-colour.svg"
+import LogoColour from "../assets/kasa-logo-colour.svg";
+import {NavLink} from "react-router-dom";
 
 /**
  * Header component with colour logo and menu links.
@@ -10,10 +11,18 @@ import LogoColour from "../assets/kasa-logo-colour.svg"
 function Header() {
     return (
         <nav className="header-navigation">
-            <img src={LogoColour} alt="Kasa logo" className="header-navigation-image"/>
-            <div>
-                <a>Accueil</a>
-                <a>A propos</a>
+            <NavLink to="/home">
+                <img src={LogoColour} alt="Kasa logo" className="header-navigation-image"/>
+            </NavLink>
+            <div className="header-navigation-menu">
+                <NavLink to="/home"
+                         className={({isActive}) => isActive ? "header-navigation-menu_active" : "header-navigation-menu_inactive"}>
+                    Accueil
+                </NavLink>
+                <NavLink to="/about"
+                         className={({isActive}) => isActive ? "header-navigation-menu_active" : "header-navigation-menu_inactive"}>
+                    A Propos
+                </NavLink>
             </div>
         </nav>
     )
