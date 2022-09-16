@@ -14,7 +14,7 @@ body { font-family: "Montserrat", sans-serif; margin: 0; }
 
 .header-navigation-menu_active { text-decoration: underline !important; }
 
-.footer { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; background-color: black; height: 200px; margin-top: 180px; }
+.footer { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; background-color: black; height: 200px; margin-top: 40px; }
 
 .footer-image { height: 40px; margin-bottom: 20px; }
 
@@ -26,4 +26,18 @@ body { font-family: "Montserrat", sans-serif; margin: 0; }
 
 .error-message { font-weight: 500; font-size: 36px; color: #FF6060; margin-bottom: 180px; margin-top: 0px; }
 
-.error-backlink { font-weight: 500; font-size: 18px; color: #FF6060; }
+.error-backlink { font-weight: 500; font-size: 18px; color: #FF6060; margin-bottom: 180px; }
+
+.home-hero { margin-top: 100px; position: relative; }
+
+.home-hero-image { display: flex; align-items: center; width: 100%; height: 225px; border-radius: 25px; }
+
+.home-hero-text { display: flex; align-items: center; position: absolute; justify-content: center; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: 500; font-size: 48px; text-align: center; color: white; background: rgba(0, 0, 0, 0.3); width: 100%; height: 100%; border-radius: 25px; }
+
+.home-cards { background: #F6F6F6; width: 100%; height: 200px; border-radius: 25px; margin-top: 45px; }
+
+.about-hero { margin-top: 100px; position: relative; }
+
+.about-hero-image { display: flex; align-items: center; width: 100%; height: 225px; border-radius: 25px; }
+
+.about-hero-text { display: flex; align-items: center; position: absolute; justify-content: center; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: 500; font-size: 48px; text-align: center; color: white; background: rgba(0, 0, 0, 0.3); width: 100%; height: 100%; border-radius: 25px; }

@@ -1,6 +1,12 @@
 import React from "react";
 import LogoWhite from "../assets/kasa-logo-white.svg";
 
+/**
+ * Footer component with white logo and copyright.
+ *
+ * @returns {*}
+ * @constructor
+ */
 function Footer() {
     return (
         <div className="footer">

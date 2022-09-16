@@ -1,5 +1,12 @@
+import React from "react";
 import {Link} from "react-router-dom";
 
+/**
+ * Error page for the 404 code.
+ *
+ * @returns {*}
+ * @constructor
+ */
 function Error() {
     return (
         <div className="error">
