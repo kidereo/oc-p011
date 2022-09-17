@@ -2,6 +2,8 @@
 
 body { font-family: "Montserrat", sans-serif; margin: 0; }
 
+h1, h2 { margin: 0 !important; }
+
 * { box-sizing: border-box; }
 
 .header-navigation { display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
@@ -30,14 +32,20 @@ body { font-family: "Montserrat", sans-serif; margin: 0; }
 
 .home-hero { margin-top: 100px; position: relative; }
 
-.home-hero-image { display: flex; align-items: center; width: 100%; height: 225px; border-radius: 25px; }
+.home-hero-image { display: flex; align-items: center; width: 100%; height: 225px; border-radius: 25px; object-fit: cover; }
 
-.home-hero-text { display: flex; align-items: center; position: absolute; justify-content: center; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: 500; font-size: 48px; text-align: center; color: white; background: rgba(0, 0, 0, 0.3); width: 100%; height: 100%; border-radius: 25px; }
+.home-hero-text { display: flex; align-items: center; position: absolute; justify-content: center; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: 500; font-size: 48px; color: white; background: rgba(0, 0, 0, 0.3); width: 100%; height: 100%; border-radius: 25px; }
 
-.home-cards { background: #F6F6F6; width: 100%; height: 200px; border-radius: 25px; margin-top: 45px; }
+.home-cards { background: #F6F6F6; width: 100%; border-radius: 25px; margin-top: 45px; padding: 55px 50px 55px 50px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 70px; }
+
+.home-cards-card { background-color: #FF6060; height: 400px; border-radius: 10px; position: relative; }
+
+.home-cards-card-image { display: flex; align-items: center; width: 100%; height: 400px; object-fit: cover; border-radius: 10px; }
+
+.home-cards-card-title { display: flex; align-items: flex-end; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; border-radius: 10px; padding: 20px 200px 20px 20px; font-weight: 500; font-size: 18px; line-height: 25px; color: white; background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)); }
 
 .about-hero { margin-top: 100px; position: relative; }
 
-.about-hero-image { display: flex; align-items: center; width: 100%; height: 225px; border-radius: 25px; }
+.about-hero-image { display: flex; align-items: center; width: 100%; height: 225px; border-radius: 25px; object-fit: cover; }
 
 .about-hero-text { display: flex; align-items: center; position: absolute; justify-content: center; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: 500; font-size: 48px; text-align: center; color: white; background: rgba(0, 0, 0, 0.3); width: 100%; height: 100%; border-radius: 25px; }

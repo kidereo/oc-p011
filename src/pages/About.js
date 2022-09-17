@@ -12,7 +12,7 @@ function About() {
         <div className="about">
             <div className="about-hero">
                 <img src={HeroImage} alt="Hero image" className="about-hero-image"/>
-                <div className="about-hero-text">A propos Kasa</div>
+                <h1 className="about-hero-text">A propos Kasa</h1>
             </div>
         </div>
     )

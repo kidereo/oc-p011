@@ -1,8 +1,10 @@
 import React from "react";
 import HeroImage from "../assets/hero-home.jpg";
+import listings from "../data/data";
+import {Link} from "react-router-dom";
 
 /**
- * Main index page.
+ * Main page with a list of all properties.
  *
  * @returns {*}
  * @constructor
@@ -12,14 +14,23 @@ function Home() {
         <div className="home">
             <div className="home-hero">
                 <img src={HeroImage} alt="Hero image" className="home-hero-image"/>
-                <div className="home-hero-text">Chez vous, partout et ailleurs</div>
+                <h1 className="home-hero-text">Chez vous, partout et ailleurs</h1>
             </div>
-
             <section className="home-cards">
-
+                {
+                    listings.map((listing) => {
+                            return (
+                                <article key={listing.id} className="home-cards-card">
+                                    <Link to={`/listing/${listing.id}`}>
+                                        <img src={listing.cover} className="home-cards-card-image" alt={listing.title}/>
+                                        <h2 className="home-cards-card-title">{listing.title}</h2>
+                                    </Link>
+                                </article>
+                            )
+                        }
+                    )
+                }
             </section>
-
-
         </div>
     )
 }

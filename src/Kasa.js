@@ -1,11 +1,12 @@
 import "./css/normalize.css";
 import './css/styles.css';
 import React from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
+import Listing from "./pages/Listing";
 import Footer from "./components/Footer";
 
 /**
@@ -17,16 +18,25 @@ import Footer from "./components/Footer";
 function Kasa() {
     return (
         <div className="body-container">
-            <Router>
-                <Header/>
-                <Routes>
-                    <Route index element={<Home/>}/>
-                    <Route path="home" element={<Home/>}/>
-                    <Route path="about" element={<About/>}/>
-                    <Route path="*" element={<Error/>}/>
-                </Routes>
-                <Footer/>
-            </Router>
+            <BrowserRouter>
+                <nav>
+                    <Header/>
+                </nav>
+                <main>
+                    <Routes>
+                        <Route index element={<Home/>}/>
+                        <Route path="home" element={<Home/>}/>
+                        <Route path="about" element={<About/>}/>
+                        <Route path="listing">
+                            <Route path=":listingId" element={<Listing/>}/>
+                        </Route>
+                        <Route path="*" element={<Error/>}/>
+                    </Routes>
+                </main>
+                <footer>
+                    <Footer/>
+                </footer>
+            </BrowserRouter>
         </div>
     );
 }
