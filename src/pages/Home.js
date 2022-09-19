@@ -21,7 +21,7 @@ function Home() {
                     listings.map((listing) => {
                             return (
                                 <article key={listing.id} className="home-cards-card">
-                                    <Link to={`/listing/${listing.id}`}>
+                                    <Link to={`/listings/${listing.id}`}>
                                         <img src={listing.cover} className="home-cards-card-image" alt={listing.title}/>
                                         <h2 className="home-cards-card-title">{listing.title}</h2>
                                     </Link>

@@ -27,9 +27,7 @@ function Kasa() {
                         <Route index element={<Home/>}/>
                         <Route path="home" element={<Home/>}/>
                         <Route path="about" element={<About/>}/>
-                        <Route path="listing">
-                            <Route path=":listingId" element={<Listing/>}/>
-                        </Route>
+                        <Route path="listings/:listingId" element={<Listing/>}/>
                         <Route path="*" element={<Error/>}/>
                     </Routes>
                 </main>
