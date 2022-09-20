@@ -7,10 +7,11 @@ import CarouselArrowRight from "../assets/carousel-arrow-right.svg";
  * Carousel component at the top of each listing page.
  *
  * @param images
+ * @param title
  * @returns {*}
  * @constructor
  */
-function Carousel({images}) {
+function Carousel({images, title}) {
     let [current, setCurrent] = useState(0);
     let numOfImages = images.length;
 
@@ -38,7 +39,8 @@ function Carousel({images}) {
                 return (
                     <div key={index} className="listing-carousel-image-wrapper">
                         {index === current && (
-                            <img src={image} alt="Listing image" className="listing-carousel-image"/>
+                            <img src={image} alt={`${title} (${index + 1} of ${numOfImages})`}
+                                 className="listing-carousel-image"/>
                         )}
                     </div>
                 )
