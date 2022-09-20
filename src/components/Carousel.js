@@ -23,7 +23,7 @@ function Carousel({images, title}) {
     }
 
     /**
-     * Progress to the previous image.
+     * Return to the previous image.
      */
     function previousImage() {
         setCurrent(current === 0 ? numOfImages - 1 : current - 1);
@@ -41,6 +41,9 @@ function Carousel({images, title}) {
                         {index === current && (
                             <img src={image} alt={`${title} (${index + 1} of ${numOfImages})`}
                                  className="listing-carousel-image"/>
+                        )}
+                        {index === current && (
+                            <p className="listing-carousel-counter">{index+1}/{numOfImages}</p>
                         )}
                     </div>
                 )

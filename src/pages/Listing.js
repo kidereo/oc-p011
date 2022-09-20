@@ -25,12 +25,13 @@ function Listing() {
     }
 
     /**
-     * Display the listing with with the passed id.
+     * Display the listing with the passed id.
      */
     let {title, location, rating, host, equipments, description, pictures} = listing;
     return (
         <div className="listing">
             <Carousel images={pictures} title={title}/>
+
         </div>
     )
 }
