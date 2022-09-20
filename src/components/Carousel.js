@@ -13,20 +13,20 @@ import CarouselArrowRight from "../assets/carousel-arrow-right.svg";
  */
 function Carousel({images, title}) {
     let [current, setCurrent] = useState(0);
-    let numOfImages = images.length;
+    let numberOfImages = images.length;
 
     /**
      * Progress to the next image.
      */
     function nextImage() {
-        setCurrent(current === numOfImages - 1 ? 0 : current + 1);
+        setCurrent(current === numberOfImages - 1 ? 0 : current + 1);
     }
 
     /**
      * Return to the previous image.
      */
     function previousImage() {
-        setCurrent(current === 0 ? numOfImages - 1 : current - 1);
+        setCurrent(current === 0 ? numberOfImages - 1 : current - 1);
     }
 
     /**
@@ -34,22 +34,22 @@ function Carousel({images, title}) {
      * Only display carousel arrows if there is more than one image.
      */
     return (
-        <div className="listing-carousel">
+        <section className="listing-carousel">
             {images.map((image, index) => {
                 return (
                     <div key={index} className="listing-carousel-image-wrapper">
                         {index === current && (
-                            <img src={image} alt={`${title} (${index + 1} of ${numOfImages})`}
+                            <img src={image} alt={`${title} (${index + 1} of ${numberOfImages})`}
                                  className="listing-carousel-image"/>
                         )}
                         {index === current && (
-                            <p className="listing-carousel-counter">{index+1}/{numOfImages}</p>
+                            <p className="listing-carousel-counter">{index+1}/{numberOfImages}</p>
                         )}
                     </div>
                 )
             })
             }
-            {numOfImages > 1 ? (
+            {numberOfImages > 1 ? (
                 <div className="listing-carousel-arrow-wrapper">
                     <img src={CarouselArrowLeft} alt="Carousel arrow left" onClick={previousImage}
                          className="listing-carousel-arrow listing-carousel-arrow_left"/>
@@ -57,7 +57,7 @@ function Carousel({images, title}) {
                          className="listing-carousel-arrow listing-carousel-arrow_right"/>
                 </div>
             ) : (null)}
-        </div>
+        </section>
 
     )
 

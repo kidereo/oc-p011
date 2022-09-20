@@ -27,11 +27,31 @@ function Listing() {
     /**
      * Display the listing with the passed id.
      */
-    let {title, location, rating, host, equipments, description, pictures} = listing;
+    let {pictures, title, location, rating, host, equipments, description} = listing;
     return (
         <div className="listing">
             <Carousel images={pictures} title={title}/>
+            <section className="listing-meta">
+                <div className="listing-meta-block1">
+                    <h1>{title}</h1>
+                    <h2>{location}</h2>
+                    <div className="listing-meta-block1-tags">
+                        {listing.tags.map((tag, index) => (
+                            <p key={index}>{tag}</p>
+                        ))}
+                    </div>
+                </div>
+                <div className="listing-meta-block2">
+                    <div className="listing-meta-block2-host">
+                        <img src={host.picture} alt={host.name} className="listing-meta-block2-host-image"/>
+                        <p className="listing-meta-block2-host-name">{host.name}</p>
+                    </div>
+                    <div className="listing-meta-block2-rating">
+                        Rating: {rating}
+                    </div>
+                </div>
 
+            </section>
         </div>
     )
 }
