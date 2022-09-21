@@ -20,10 +20,10 @@ function Home() {
                 {
                     listings.map((listing) => {
                             return (
-                                <article key={listing.id} className="home-cards-card">
+                                <article key={listing.id} className="home-cards-article">
                                     <Link to={`/listings/${listing.id}`}>
-                                        <img src={listing.cover} className="home-cards-card-image" alt={listing.title}/>
-                                        <h2 className="home-cards-card-title">{listing.title}</h2>
+                                        <img src={listing.cover} className="home-cards-article-image" alt={listing.title}/>
+                                        <h2 className="home-cards-article-title">{listing.title}</h2>
                                     </Link>
                                 </article>
                             )

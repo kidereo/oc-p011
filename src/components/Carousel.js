@@ -34,7 +34,7 @@ function Carousel({images, title}) {
      * Only display carousel arrows if there is more than one image.
      */
     return (
-        <section className="listing-carousel">
+        <>
             {images.map((image, index) => {
                 return (
                     <div key={index} className="listing-carousel-image-wrapper">
@@ -43,7 +43,7 @@ function Carousel({images, title}) {
                                  className="listing-carousel-image"/>
                         )}
                         {index === current && (
-                            <p className="listing-carousel-counter">{index+1}/{numberOfImages}</p>
+                            <p className="listing-carousel-counter">{index + 1}/{numberOfImages}</p>
                         )}
                     </div>
                 )
@@ -57,7 +57,7 @@ function Carousel({images, title}) {
                          className="listing-carousel-arrow listing-carousel-arrow_right"/>
                 </div>
             ) : (null)}
-        </section>
+        </>
 
     )
 
