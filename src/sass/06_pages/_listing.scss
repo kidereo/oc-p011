@@ -116,4 +116,55 @@
       }
     }
   }
+
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin-top: 40px;
+
+    &-dropdown {
+      display: flex;
+      flex-direction: column;
+
+      &-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $colour-background-primary;
+        border-radius: 10px;
+        z-index: 1;
+        cursor: pointer;
+
+        h3 {
+          font-weight: 500;
+          font-size: 18px;
+          color: white;
+          padding: 13px 20px 13px 20px;
+        }
+
+        img {
+          padding: 13px 20px 13px 20px;
+        }
+      }
+
+      &-content {
+        background-color: $colour-lighter-gray;
+        font-weight: 400;
+        font-size: 18px;
+        color: $colour-font-primary;
+        padding: 50px 20px 40px 20px;
+        border-radius: 10px;
+        height: 300px;
+        margin-top: -15px;
+        line-height: 30px;
+
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+        }
+      }
+    }
+  }
 }

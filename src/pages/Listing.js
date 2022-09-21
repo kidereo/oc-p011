@@ -4,6 +4,7 @@ import listings from "../data/data";
 import Carousel from "../components/Carousel";
 import Error from "../pages/Error";
 import Rating from "../components/Rating";
+import Dropdown from "../components/Dropdown";
 
 /**
  * Listing page.
@@ -57,7 +58,12 @@ function Listing() {
             </section>
             {/*End of listing-meta section*/}
             <section className="listing-content">
-
+                <div className="listing-content-dropdown">
+                    <Dropdown title="Description" content={description}/>
+                </div>
+                <div className="listing-content-dropdown">
+                    <Dropdown title="Equipments" content={equipments}/>
+                </div>
             </section>
             {/*End of listing-content section*/}
         </div>

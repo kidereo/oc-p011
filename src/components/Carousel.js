@@ -58,9 +58,7 @@ function Carousel({images, title}) {
                 </div>
             ) : (null)}
         </>
-
     )
-
 }
 
 export default Carousel;
