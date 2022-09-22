@@ -4,30 +4,35 @@ import DropdownArrowUp from "../assets/dropdown-arrow-up.svg";
 import DropdownArrowDown from "../assets/dropdown-arrow-down.svg";
 
 /**
- * Dropdown component in the listing-content section.
+ * Dropdown component.
+ * Used both on the Listing and About pages by passing the classes as props.
  *
  * @param title
  * @param content
+ * @param class_1
+ * @param class_2
+ * @param class_3
+ * @param class_4
  * @returns {*}
  * @constructor
  */
-function DropdownInListing({title, content}) {
+function Dropdown({title, content, class_1 = null, class_2 = null, class_3 = null, class_4 = null}) {
     const [display, setDisplay] = useState("none");
 
     return (
-        <>
-            <div className="listing-content-dropdown-title" onClick={swapDisplay}>
-                <h3>{title}</h3>
+        <article className={class_1}>
+            <div className={class_2} onClick={swapDisplay}>
+                <h2>{title}</h2>
                 {display === "none" ?
                     (<img src={DropdownArrowDown} alt="Arrow down"/>) :
                     (<img src={DropdownArrowUp} alt="Arrow up"/>)
                 }
             </div>
-            <div className="listing-content-dropdown-content" style={{display: display}}>
+            <div className={class_3} style={{display: display}}>
                 {Array.isArray(content) ? (
                     <ul>
                         {content.map((element, index) => (
-                            <li key={index} className="listing-content-dropdown-content-list">
+                            <li key={index} className={class_4}>
                                 {element}
                             </li>
                         ))}
@@ -39,7 +44,7 @@ function DropdownInListing({title, content}) {
                 )
                 }
             </div>
-        </>
+        </article>
     );
 
     /**
@@ -54,4 +59,4 @@ function DropdownInListing({title, content}) {
     }
 }
 
-export default DropdownInListing;
+export default Dropdown;

@@ -53,11 +53,12 @@
         line-height: 50px;
       }
 
-      h2 {
+      p {
         font-size: 18px;
         font-weight: 500;
         color: $colour-font-primary;
         line-height: 25px;
+        margin-top: 0;
       }
 
       &-tags {
@@ -138,7 +139,7 @@
         z-index: 1;
         cursor: pointer;
 
-        h3 {
+        h2 {
           font-weight: 500;
           font-size: 18px;
           color: white;

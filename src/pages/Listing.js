@@ -3,7 +3,7 @@ import {useParams, Navigate} from "react-router-dom";
 import listings from "../data/data";
 import Carousel from "../components/Carousel";
 import Rating from "../components/Rating";
-import DropdownInListing from "../components/DropdownInListing";
+import Dropdown from "../components/Dropdown";
 
 /**
  * Listing page.
@@ -19,7 +19,7 @@ function Listing() {
      * Return the 404 page if there is no listing with passed parameter (e.g. manual entry).
      */
     if (listing === undefined) {
-        return <Navigate to='/error'/>
+        return <Navigate to="/error"/>
     }
 
     /**
@@ -35,7 +35,7 @@ function Listing() {
             <section className="listing-meta">
                 <div className="listing-meta-block1">
                     <h1>{title}</h1>
-                    <h2>{location}</h2>
+                    <p>{location}</p>
                     <div className="listing-meta-block1-tags">
                         {tags.map((tag, index) => (
                             <p key={index}>{tag}</p>
@@ -54,12 +54,17 @@ function Listing() {
             </section>
             {/*End of listing-meta section*/}
             <section className="listing-content">
-                <div className="listing-content-dropdown">
-                    <DropdownInListing title="Description" content={description}/>
-                </div>
-                <div className="listing-content-dropdown">
-                    <DropdownInListing title="Equipments" content={equipments}/>
-                </div>
+                <Dropdown title="Description"
+                          content={description}
+                          class_1="listing-content-dropdown"
+                          class_2="listing-content-dropdown-title"
+                          class_3="listing-content-dropdown-content"/>
+                <Dropdown title="Equipments"
+                          content={equipments}
+                          class_1="listing-content-dropdown"
+                          class_2="listing-content-dropdown-title"
+                          class_3="listing-content-dropdown-content"
+                          class_4="listing-content-dropdown-content-list"/>
             </section>
             {/*End of listing-content section*/}
         </div>
