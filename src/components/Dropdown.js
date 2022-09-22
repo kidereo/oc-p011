@@ -28,20 +28,7 @@ function Dropdown({title, content, class_1 = null, class_2 = null, class_3 = nul
                 }
             </div>
             <div className={class_3} style={{display: displayContent}}>
-                {Array.isArray(content) ? (
-                    <ul>
-                        {content.map((element, index) => (
-                            <li key={index} className={class_4}>
-                                {element}
-                            </li>
-                        ))}
-                    </ul>
-                ) : (
-                    <p>
-                        {content}
-                    </p>
-                )
-                }
+                <p>{content}</p>
             </div>
         </article>
     );

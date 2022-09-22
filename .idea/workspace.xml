@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a6e535ae-12b9-4adc-9e59-3b29c1bb9934" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DropdownInAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DropdownInAbout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DropdownInListing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dropdown.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Listing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Listing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/06_pages/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/06_pages/_about.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/06_pages/_listing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/06_pages/_listing.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +19,41 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Dropdown.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-882">
-              <caret line="7" column="75" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="75" />
+            <state relative-caret-position="487">
+              <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/Listing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/06_pages/_listing.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="170" column="19" lean-forward="true" selection-start-line="170" selection-start-column="19" selection-end-line="170" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/About.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -76,12 +106,12 @@
         <option value="$PROJECT_DIR$/src/components/Carousel.js" />
         <option value="$PROJECT_DIR$/src/components/Rating.js" />
         <option value="$PROJECT_DIR$/src/sass/06_pages/_about.scss" />
-        <option value="$PROJECT_DIR$/src/sass/06_pages/_listing.scss" />
         <option value="$PROJECT_DIR$/src/components/DropdownInListing.js" />
         <option value="$PROJECT_DIR$/src/pages/About.js" />
-        <option value="$PROJECT_DIR$/src/pages/Listing.js" />
-        <option value="$PROJECT_DIR$/src/components/Dropdown.js" />
         <option value="$PROJECT_DIR$/src/components/DropdownInAbout.js" />
+        <option value="$PROJECT_DIR$/src/components/Dropdown.js" />
+        <option value="$PROJECT_DIR$/src/pages/Listing.js" />
+        <option value="$PROJECT_DIR$/src/sass/06_pages/_listing.scss" />
       </list>
     </option>
   </component>
@@ -279,7 +309,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663247567879</updated>
-      <workItem from="1663247569274" duration="108784000" />
+      <workItem from="1663247569274" duration="114881000" />
     </task>
     <task id="LOCAL-00001" summary="Performed second push">
       <created>1663259031220</created>
@@ -393,11 +423,25 @@
       <option name="project" value="LOCAL" />
       <updated>1663853066568</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Use the same Dropdown component both on the Listing and About pages by passing css classes as props.">
+      <created>1663859163744</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663859163744</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Use css to turn arrow of the Dropdown component.">
+      <created>1663861654329</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663861654329</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108784000" />
+    <option name="totallyTimeSpent" value="114881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1225" height="1283" extended-state="0" />
@@ -445,7 +489,9 @@
     <MESSAGE value="Fixed eslint css warning." />
     <MESSAGE value="Minor code refactoring." />
     <MESSAGE value="Implemented redirection to Error page if a listing is not found." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented redirection to Error page if a listing is not found." />
+    <MESSAGE value="Use the same Dropdown component both on the Listing and About pages by passing css classes as props." />
+    <MESSAGE value="Use css to turn arrow of the Dropdown component." />
+    <option name="LAST_COMMIT_MESSAGE" value="Use css to turn arrow of the Dropdown component." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/favicon.ico">
@@ -692,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/06_pages/_listing.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/06_pages/_about.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -711,18 +750,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/DropdownInAbout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
+        <state relative-caret-position="-93">
           <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Listing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-645">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -731,8 +760,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/About.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
+        <state relative-caret-position="442">
           <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/06_pages/_listing.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="170" column="19" lean-forward="true" selection-start-line="170" selection-start-column="19" selection-end-line="170" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Listing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -741,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Dropdown.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-882">
-          <caret line="7" column="75" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="75" />
+        <state relative-caret-position="487">
+          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

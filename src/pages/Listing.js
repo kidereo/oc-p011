@@ -60,11 +60,10 @@ function Listing() {
                           class_2="listing-content-dropdown-title"
                           class_3="listing-content-dropdown-content"/>
                 <Dropdown title="Equipments"
-                          content={equipments}
+                          content={equipments.map((element, index) => (<span key={index}>{element}</span>))}
                           class_1="listing-content-dropdown"
                           class_2="listing-content-dropdown-title"
-                          class_3="listing-content-dropdown-content"
-                          class_4="listing-content-dropdown-content-list"/>
+                          class_3="listing-content-dropdown-content"/>
             </section>
             {/*End of listing-content section*/}
         </div>
