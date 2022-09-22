@@ -1,6 +1,5 @@
 import React from "react";
 import {useState} from "react";
-import DropdownArrowUp from "../assets/dropdown-arrow-up.svg";
 import DropdownArrowDown from "../assets/dropdown-arrow-down.svg";
 
 /**
@@ -17,18 +16,18 @@ import DropdownArrowDown from "../assets/dropdown-arrow-down.svg";
  * @constructor
  */
 function Dropdown({title, content, class_1 = null, class_2 = null, class_3 = null, class_4 = null}) {
-    const [display, setDisplay] = useState("none");
+    const [displayContent, setDisplayContent] = useState("none");
 
     return (
         <article className={class_1}>
             <div className={class_2} onClick={swapDisplay}>
                 <h2>{title}</h2>
-                {display === "none" ?
+                {displayContent === "none" ?
                     (<img src={DropdownArrowDown} alt="Arrow down"/>) :
-                    (<img src={DropdownArrowUp} alt="Arrow up"/>)
+                    (<img src={DropdownArrowDown} style={{transform: "rotate(180deg)"}} alt="Arrow up"/>)
                 }
             </div>
-            <div className={class_3} style={{display: display}}>
+            <div className={class_3} style={{display: displayContent}}>
                 {Array.isArray(content) ? (
                     <ul>
                         {content.map((element, index) => (
@@ -51,10 +50,10 @@ function Dropdown({title, content, class_1 = null, class_2 = null, class_3 = nul
      * Change display attribute from 'none' to 'flex' and vice versa.
      */
     function swapDisplay() {
-        if (display === "none") {
-            setDisplay("flex")
+        if (displayContent === "none") {
+            setDisplayContent("flex")
         } else {
-            setDisplay("none")
+            setDisplayContent("none")
         }
     }
 }
