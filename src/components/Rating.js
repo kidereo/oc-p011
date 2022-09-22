@@ -10,10 +10,13 @@ import StarEmpty from "../assets/star-empty.svg";
  * @constructor
  */
 function Rating({rating}) {
+    const maxRating = 5;
     return (
         <>
-            {Array.from({length: rating}, (element, i) => <img key={i} src={StarFilled} alt="Rating star filled"/>)}
-            {Array.from({length: 5 - rating}, (element, i) => <img key={i} src={StarEmpty} alt="Rating star empty"/>)}
+            {Array.from({length: rating}, (element, index) =>
+                <img key={index} src={StarFilled} alt="Rating star filled"/>)}
+            {Array.from({length: maxRating - rating}, (element, index) =>
+                <img key={index} src={StarEmpty} alt="Rating star empty"/>)}
         </>
     )
 }

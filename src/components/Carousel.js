@@ -12,22 +12,8 @@ import CarouselArrowRight from "../assets/carousel-arrow-right.svg";
  * @constructor
  */
 function Carousel({images, title}) {
-    let [current, setCurrent] = useState(0);
+    let [currentImage, setCurrentImage] = useState(0);
     let numberOfImages = images.length;
-
-    /**
-     * Progress to the next image.
-     */
-    function nextImage() {
-        setCurrent(current === numberOfImages - 1 ? 0 : current + 1);
-    }
-
-    /**
-     * Return to the previous image.
-     */
-    function previousImage() {
-        setCurrent(current === 0 ? numberOfImages - 1 : current - 1);
-    }
 
     /**
      * Display listing image.
@@ -38,12 +24,12 @@ function Carousel({images, title}) {
             {images.map((image, index) => {
                 return (
                     <div key={index} className="listing-carousel-image-wrapper">
-                        {index === current && (
-                            <img src={image} alt={`${title} (${index + 1} of ${numberOfImages})`}
-                                 className="listing-carousel-image"/>
-                        )}
-                        {index === current && (
-                            <p className="listing-carousel-counter">{index + 1}/{numberOfImages}</p>
+                        {index === currentImage && (
+                            <>
+                                <img src={image} alt={`${title} (${index + 1} of ${numberOfImages})`}
+                                     className="listing-carousel-image"/>
+                                <p className="listing-carousel-counter">{index + 1}/{numberOfImages}</p>
+                            </>
                         )}
                     </div>
                 )
@@ -58,7 +44,21 @@ function Carousel({images, title}) {
                 </div>
             ) : (null)}
         </>
-    )
+    );
+
+    /**
+     * Progress to the next image.
+     */
+    function nextImage() {
+        setCurrentImage(currentImage === numberOfImages - 1 ? 0 : currentImage + 1);
+    }
+
+    /**
+     * Return to the previous image.
+     */
+    function previousImage() {
+        setCurrentImage(currentImage === 0 ? numberOfImages - 1 : currentImage - 1);
+    }
 }
 
 export default Carousel;

@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6e535ae-12b9-4adc-9e59-3b29c1bb9934" name="Default Changelist" comment="Completed the About page.">
-      <change afterPath="$PROJECT_DIR$/src/components/DropdownInAbout.js" afterDir="false" />
+    <list default="true" id="a6e535ae-12b9-4adc-9e59-3b29c1bb9934" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DropdownInListing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Listing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Listing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/06_pages/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/06_pages/_about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/06_pages/_error.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/06_pages/_error.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/06_pages/_listing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/06_pages/_listing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/Listing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1066">
+            <state relative-caret-position="325">
               <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -33,11 +26,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sass/06_pages/_error.scss">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Carousel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="517">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Rating.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/DropdownInListing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +100,6 @@
         <option value="$PROJECT_DIR$/src/sass/styles.scss" />
         <option value="$PROJECT_DIR$/src/Kasa.js" />
         <option value="$PROJECT_DIR$/src/sass/04_components/_header.scss" />
-        <option value="$PROJECT_DIR$/src/components/Rating.js" />
-        <option value="$PROJECT_DIR$/src/components/Carousel.js" />
         <option value="$PROJECT_DIR$/src/pages/Listing.js" />
         <option value="$PROJECT_DIR$/src/sass/06_pages/_home.scss" />
         <option value="$PROJECT_DIR$/src/components/Dropdown.js" />
@@ -90,9 +108,11 @@
         <option value="$PROJECT_DIR$/src/components/DropdownInListing.js" />
         <option value="$PROJECT_DIR$/src/sass/03_base/_typography.scss" />
         <option value="$PROJECT_DIR$/src/sass/06_pages/_about.scss" />
-        <option value="$PROJECT_DIR$/src/sass/06_pages/_listing.scss" />
         <option value="$PROJECT_DIR$/src/components/DropdownInAbout.js" />
         <option value="$PROJECT_DIR$/src/sass/06_pages/_error.scss" />
+        <option value="$PROJECT_DIR$/src/sass/06_pages/_listing.scss" />
+        <option value="$PROJECT_DIR$/src/components/Carousel.js" />
+        <option value="$PROJECT_DIR$/src/components/Rating.js" />
       </list>
     </option>
   </component>
@@ -290,7 +310,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663247567879</updated>
-      <workItem from="1663247569274" duration="97222000" />
+      <workItem from="1663247569274" duration="98694000" />
     </task>
     <task id="LOCAL-00001" summary="Performed second push">
       <created>1663259031220</created>
@@ -376,11 +396,25 @@
       <option name="project" value="LOCAL" />
       <updated>1663791009206</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Completed the About page.">
+      <created>1663838959640</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663838959640</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fixed eslint css warning.">
+      <created>1663839204629</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663839204629</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97222000" />
+    <option name="totallyTimeSpent" value="98694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1225" height="1283" extended-state="0" />
@@ -425,7 +459,8 @@
     <MESSAGE value="Completed listing metadata." />
     <MESSAGE value="Completed listing description dropdowns." />
     <MESSAGE value="Completed the About page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed the About page." />
+    <MESSAGE value="Fixed eslint css warning." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed eslint css warning." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/favicon.ico">
@@ -614,16 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Rating.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -638,16 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
           <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DropdownInListing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -678,13 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/06_pages/_listing.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/DropdownInAbout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -695,26 +703,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Carousel.js">
+    <entry file="file://$PROJECT_DIR$/src/sass/06_pages/_error.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        <state relative-caret-position="405">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/06_pages/_listing.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-952">
+          <caret line="28" column="103" selection-start-line="28" selection-start-column="103" selection-end-line="28" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DropdownInListing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/src/components/Carousel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="28" column="103" selection-start-line="28" selection-start-column="103" selection-end-line="28" selection-end-column="103" />
+        <state relative-caret-position="517">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/Listing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
+        <state relative-caret-position="325">
           <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -722,10 +754,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/06_pages/_error.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/Rating.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="567">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
