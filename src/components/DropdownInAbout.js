@@ -1,7 +1,7 @@
 import React from "react";
 import {useState} from "react";
 import DropdownArrowUp from "../assets/dropdown-arrow-up.svg";
-import DropdownArrowDown from "../assets/dropdown-arrow-down.svg";
+import DropdownArrowDown from "../assets/dropdown-arrow.svg";
 
 /**
  * Dropdown component for the about-content section.
