@@ -12,10 +12,10 @@ import {Link} from "react-router-dom";
 function Home() {
     return (
         <div className="home">
-            <div className="home-hero">
+            <section className="home-hero">
                 <img src={HeroImage} alt="Hero" className="home-hero-image"/>
                 <h1 className="home-hero-text">Chez vous, partout et ailleurs</h1>
-            </div>
+            </section>
             <section className="home-cards">
                 {
                     listings.map((listing) => {

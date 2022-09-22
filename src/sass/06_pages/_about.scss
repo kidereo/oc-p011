@@ -30,6 +30,50 @@
       border-radius: 25px;
     }
   }
+
+  &-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-dropdown {
+      margin-top: 30px;
+
+      &-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $colour-background-primary;
+        border-radius: 5px;
+        z-index: 1;
+        cursor: pointer;
+        position: relative;
+
+        h2 {
+          font-weight: 500;
+          font-size: 24px;
+          color: white;
+          padding: 10px 20px 10px 20px;
+        }
+
+        img {
+          padding: 10px 20px 10px 20px;
+        }
+      }
+
+      &-content {
+        background-color: $colour-lighter-gray;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        color: $colour-font-primary;
+        padding: 45px 20px 0 20px;
+        border-radius: 5px;
+        margin-top: -15px;
+      }
+    }
+  }
 }
 
 

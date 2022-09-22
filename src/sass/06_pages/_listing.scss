@@ -8,6 +8,7 @@
       height: 415px;
       border-radius: 25px;
       object-fit: cover;
+      background-color: $colour-darker-gray;
     }
 
     &-counter {
@@ -154,7 +155,7 @@
         font-weight: 400;
         font-size: 18px;
         color: $colour-font-primary;
-        padding: 50px 20px 40px 20px;
+        padding: 45px 20px 40px 20px;
         border-radius: 10px;
         height: 300px;
         margin-top: -15px;

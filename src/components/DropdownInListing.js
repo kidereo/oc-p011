@@ -11,10 +11,10 @@ import DropdownArrowDown from "../assets/dropdown-arrow-down.svg";
  * @returns {*}
  * @constructor
  */
-function Dropdown({title, content}) {
+function DropdownInListing({title, content}) {
     const [display, setDisplay] = useState("none");
 
-    function handleClick() {
+    function swapDisplay() {
         if (display === "none") {
             setDisplay("flex")
         } else {
@@ -24,10 +24,12 @@ function Dropdown({title, content}) {
 
     return (
         <>
-            <div className="listing-content-dropdown-title" onClick={handleClick}>
+            <div className="listing-content-dropdown-title" onClick={swapDisplay}>
                 <h3>{title}</h3>
-                {display === "none" && (<img src={DropdownArrowDown} alt="Arrow down"/>)}
-                {display === "flex" && (<img src={DropdownArrowUp} alt="Arrow up"/>)}
+                {display === "none" ?
+                    (<img src={DropdownArrowDown} alt="Arrow down"/>) :
+                    (<img src={DropdownArrowUp} alt="Arrow up"/>)
+                }
             </div>
             <div className="listing-content-dropdown-content" style={{display: display}}>
                 {Array.isArray(content) ? (
@@ -49,4 +51,4 @@ function Dropdown({title, content}) {
     )
 }
 
-export default Dropdown;
+export default DropdownInListing;
