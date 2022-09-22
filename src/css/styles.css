@@ -84,7 +84,7 @@ h1, h2, h3 { margin: 0 !important; }
 
 .listing-meta-block1-tags p { margin-right: 10px; background-color: #FF6060; font-size: 14px; font-weight: 500; color: white; display: flex; align-items: center; padding: 5px 40px 5px 40px; border-radius: 10px; }
 
-.listing-meta-block2 { display: flex; flex-direction: column; justify-content: space-between; align-items: end; }
+.listing-meta-block2 { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; }
 
 .listing-meta-block2-host { display: flex; flex-direction: row-reverse; align-items: center; }
 
