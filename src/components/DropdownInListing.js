@@ -14,14 +14,6 @@ import DropdownArrowDown from "../assets/dropdown-arrow-down.svg";
 function DropdownInListing({title, content}) {
     const [display, setDisplay] = useState("none");
 
-    function swapDisplay() {
-        if (display === "none") {
-            setDisplay("flex")
-        } else {
-            setDisplay("none")
-        }
-    }
-
     return (
         <>
             <div className="listing-content-dropdown-title" onClick={swapDisplay}>
@@ -48,7 +40,18 @@ function DropdownInListing({title, content}) {
                 }
             </div>
         </>
-    )
+    );
+
+    /**
+     * Change display attribute from 'none' to 'flex' and vice versa.
+     */
+    function swapDisplay() {
+        if (display === "none") {
+            setDisplay("flex")
+        } else {
+            setDisplay("none")
+        }
+    }
 }
 
 export default DropdownInListing;

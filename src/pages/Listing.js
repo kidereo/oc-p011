@@ -1,8 +1,7 @@
 import React from "react";
-import {useParams} from "react-router-dom";
+import {useParams, Navigate} from "react-router-dom";
 import listings from "../data/data";
 import Carousel from "../components/Carousel";
-import Error from "../pages/Error";
 import Rating from "../components/Rating";
 import DropdownInListing from "../components/DropdownInListing";
 
@@ -18,12 +17,9 @@ function Listing() {
 
     /**
      * Return the 404 page if there is no listing with passed parameter (e.g. manual entry).
-     * TODO: Uncaught TypeError: Cannot destructure property 'title' of 'listing' as it is undefined.
      */
     if (listing === undefined) {
-        return (
-            <Error/>
-        );
+        return <Navigate to='/error'/>
     }
 
     /**

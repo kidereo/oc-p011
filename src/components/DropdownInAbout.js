@@ -14,14 +14,6 @@ import DropdownArrowDown from "../assets/dropdown-arrow-down.svg";
 function DropdownInAbout({title, content}) {
     const [display, setDisplay] = useState("none");
 
-    function swapDisplay() {
-        if (display === "none") {
-            setDisplay("flex")
-        } else {
-            setDisplay("none")
-        }
-    }
-
     return (
         <article className="about-content-dropdown">
             <div className="about-content-dropdown-title" onClick={swapDisplay}>
@@ -35,7 +27,18 @@ function DropdownInAbout({title, content}) {
                 <p>{content}</p>
             </div>
         </article>
-    )
+    );
+
+    /**
+     * Change display attribute from 'none' to 'flex' and vice versa.
+     */
+    function swapDisplay() {
+        if (display === "none") {
+            setDisplay("flex")
+        } else {
+            setDisplay("none")
+        }
+    }
 }
 
 export default DropdownInAbout;
