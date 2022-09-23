@@ -6,13 +6,32 @@
   background-color: $colour-background-footer;
   height: 200px;
   margin-top: 40px;
+
   &-image {
     height: 40px;
     margin-bottom: 20px;
   }
+
   &-copyright {
     font-weight: 500;
     font-size: 24px;
     color: $colour-font-footer;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  .footer {
+    height: 200px;
+    margin: 20px -20px -20px -20px;
+
+    &-image {
+      height: 30px;
+      margin-bottom: 10px;
+    }
+
+    &-copyright {
+      font-size: 12px;
+      margin-bottom: 70px;
+    }
   }
 }

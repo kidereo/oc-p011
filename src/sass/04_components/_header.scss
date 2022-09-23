@@ -31,3 +31,24 @@
     }
   }
 }
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  .header {
+
+    &-navigation {
+
+      &-image {
+        height: 40px;
+      }
+
+      &-menu {
+
+        a {
+          font-size: 12px;
+          margin-left: 10px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

@@ -3,3 +3,10 @@
   max-width: $breakpoint-desktop;
   margin: 40px auto 40px auto;
 }
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  .body-container {
+    margin: 20px;
+    width: auto;
+  }
+}

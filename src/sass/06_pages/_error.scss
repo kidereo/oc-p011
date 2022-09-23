@@ -9,6 +9,7 @@
     color: $colour-font-primary;
     margin: 150px auto 40px auto;
   }
+
   &-message {
     font-weight: 500;
     font-size: 36px;
@@ -16,10 +17,33 @@
     margin-bottom: 180px;
     margin-top: 0;
   }
+
   &-backlink {
     font-weight: 500;
     font-size: 18px;
     color: $colour-font-primary;
     margin-bottom: 180px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  .error {
+
+    &-code {
+      font-size: 96px;
+    }
+
+    &-message {
+      font-size: 18px;
+      padding: 0 40px 0 40px;
+      margin-bottom: 130px;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    &-backlink {
+      font-size: 14px;
+      margin-bottom: 100px;
+    }
   }
 }

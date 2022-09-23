@@ -3,6 +3,7 @@
     margin-top: 100px;
     position: relative;
 
+
     &-image {
       display: flex;
       align-items: center;
@@ -73,6 +74,46 @@
         margin-top: -15px;
       }
     }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  .about {
+    &-hero {
+      margin-top: 20px;
+
+      &-text {
+        font-size: 24px;
+      }
+    }
+
+    &-content {
+      width: 100%;
+
+      &-dropdown {
+        margin-top: 20px;
+
+        &-title {
+
+          h2, h3 {
+            font-size: 13px;
+            padding: 5px 10px 5px 10px;
+          }
+
+          img {
+            padding: 5px 10px 5px 10px;
+            height: 20px;
+          }
+        }
+
+        &-content {
+          font-size: 12px;
+          line-height: 17px;
+          padding: 25px 20px 0 20px;
+        }
+      }
+    }
+
   }
 }
 

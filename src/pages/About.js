@@ -13,7 +13,7 @@ function About() {
         <div className="about">
             <section className="about-hero">
                 <img src={HeroImage} alt="Hero" className="about-hero-image"/>
-                <h1 className="about-hero-text">A propos Kasa</h1>
+                <h1 className="about-hero-text"> </h1>
             </section>
             <section className="about-content">
                 <Dropdown title="Fiabilité"
