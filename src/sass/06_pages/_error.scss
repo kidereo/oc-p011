@@ -47,3 +47,13 @@
     }
   }
 }
+
+
+@media only screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+  .error {
+
+    &-message {
+      text-align: center;
+    }
+  }
+}

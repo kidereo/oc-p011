@@ -113,8 +113,22 @@
         }
       }
     }
-
   }
 }
 
+@media only screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+  .about {
+    &-hero {
+      margin-top: 40px;
+    }
+
+    &-content {
+      width: 100%;
+
+      &-dropdown {
+        margin-top: 20px;
+      }
+    }
+  }
+}
 

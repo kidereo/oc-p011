@@ -116,4 +116,19 @@
   }
 }
 
+@media only screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+  .home {
+    &-hero {
+      margin-top: 40px;
+    }
+
+    &-cards {
+      margin-top: 40px;
+      padding: 20px;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+  }
+}
+
 

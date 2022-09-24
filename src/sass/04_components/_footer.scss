@@ -35,3 +35,19 @@
     }
   }
 }
+
+@media only screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+  .footer {
+    height: 200px;
+    margin: 20px -40px -40px -40px;
+
+    &-image {
+      margin-bottom: 10px;
+    }
+
+    &-copyright {
+      font-size: 18px;
+      margin-bottom: 60px;
+    }
+  }
+}
