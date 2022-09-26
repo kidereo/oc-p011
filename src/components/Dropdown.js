@@ -1,5 +1,6 @@
 import React from "react";
 import {useState} from "react";
+import * as PropTypes from 'prop-types';
 import DropdownArrow from "../assets/dropdown-arrow.svg";
 
 /**
@@ -43,5 +44,13 @@ function Dropdown({title, content, classArticle, classTitle, classContent}) {
         }
     }
 }
+
+Dropdown.propTypes = {
+    title: PropTypes.string,
+    content: PropTypes.node,
+    classArticle: PropTypes.string,
+    classTitle: PropTypes.string,
+    classList: PropTypes.string,
+};
 
 export default Dropdown;

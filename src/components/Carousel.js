@@ -1,5 +1,6 @@
 import React from "react";
 import {useState} from "react";
+import * as PropTypes from 'prop-types';
 import CarouselArrowLeft from "../assets/carousel-arrow-left.svg";
 import CarouselArrowRight from "../assets/carousel-arrow-right.svg";
 
@@ -60,5 +61,10 @@ function Carousel({images, title}) {
         setCurrentImage(currentImage === 0 ? numberOfImages - 1 : currentImage - 1);
     }
 }
+
+Carousel.propTypes = {
+    images: PropTypes.array,
+    title: PropTypes.string,
+};
 
 export default Carousel;

@@ -1,4 +1,5 @@
 import React from "react";
+import * as PropTypes from 'prop-types';
 import StarFilled from "../assets/star-filled.svg";
 import StarEmpty from "../assets/star-empty.svg";
 
@@ -20,5 +21,9 @@ function Rating({rating}) {
         </>
     )
 }
+
+Rating.propTypes = {
+    rating: PropTypes.string,
+};
 
 export default Rating;
